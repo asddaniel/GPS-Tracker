@@ -26,7 +26,7 @@ return [
     |
     */
 
-    'env' => env('APP_ENV', 'production'),
+    'env' => env('APP_ENV', 'development'),
 
     /*
     |--------------------------------------------------------------------------
@@ -39,7 +39,7 @@ return [
     |
     */
 
-    'debug' => env('APP_DEBUG', false),
+    'debug' => env('APP_DEBUG', true),
 
     /*
     |--------------------------------------------------------------------------
@@ -80,12 +80,13 @@ return [
     |
     */
 
-    'locale' => env('APP_LOCALE', 'es'),
-    'locales' => ['es', 'en', 'fr'],
+    'locale' => env('APP_LOCALE', 'fr'),
+    'locales' => ['fr','es', 'en' ],
     'locale_system' => [
+        'fr' => 'fr_FR.UTF-8',
         'es' => 'es_ES.UTF-8',
         'en' => 'en_US.UTF-8',
-        'fr' => 'fr_FR.UTF-8',
+       
     ],
 
     /*
@@ -99,7 +100,7 @@ return [
     |
     */
 
-    'fallback_locale' => 'es',
+    'fallback_locale' => 'fr',
 
     /*
     |--------------------------------------------------------------------------
@@ -112,7 +113,7 @@ return [
     |
     */
 
-    'faker_locale' => 'es_ES',
+    'faker_locale' => 'fr_Fr',
 
     /*
     |--------------------------------------------------------------------------
@@ -125,7 +126,7 @@ return [
     |
     */
 
-    'key' => env('APP_KEY'),
+    'key' => env('APP_KEY', "base64:yNjP3putg7PlaZ086cfHHNJkI6YF7YhLUkt1Ke8UlBU="),
     'cipher' => 'AES-256-CBC',
 
     /*

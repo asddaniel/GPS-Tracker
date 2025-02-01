@@ -8,7 +8,7 @@ use App\Domains\Language\Seeder\Language as LanguageSeeder;
 use App\Domains\Server\Seeder\Server as ServerSeeder;
 use App\Domains\Timezone\Seeder\Timezone as TimezoneSeeder;
 
-class Database extends Seeder
+class DatabaseSeeder extends Seeder
 {
     /**
      * @return void
