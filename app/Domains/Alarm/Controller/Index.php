@@ -18,10 +18,10 @@ class Index extends ControllerAbstract
         if ($this->request->wantsJson()) {
             return $this->responseJson();
         }
-        $public_ip = file_get_contents('https://api64.ipify.org?format=json');
-        $public_ip = json_decode($public_ip)->ip;
-        echo $public_ip;
-        dd($public_ip);
+        // $public_ip = file_get_contents('https://api64.ipify.org?format=json');
+        // $public_ip = json_decode($public_ip)->ip;
+        // echo $public_ip;
+        // dd($public_ip);
 
         $this->meta('title', __('alarm-index.meta-title'));
 
